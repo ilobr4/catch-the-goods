@@ -6,6 +6,8 @@ function setup() {
     canvas.width = width;
     canvas.height = height;
     createObjects();
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
 }
 
 function draw() {
@@ -146,11 +148,8 @@ function showScore(context) {
 function showTime(context) {
     context.font = "15px Arial";
     context.fillStyle = "rgb(255, 13, 0)";
-    context.fillText("Score = " + score, 740, 25)
+    context.fillText("Time = " + minutes + ":" + seconds, 740, 50);
 }
-
-document.addEventListener('keydown', handleKeyDown);
-document.addEventListener('keyup', handleKeyUp);
 
 function move() {
     if (rightKeyPressed) {
@@ -172,6 +171,8 @@ function handleKeyDown(event) {
         leftKeyPressed = true;
     } else if (event.code === 'ArrowUp') {
         upKeyPressed = true;
+    } else if (event.code === 'Space') {
+        spacebarPressed = true;
     }
 }
 
@@ -182,6 +183,9 @@ function handleKeyUp(event) {
         leftKeyPressed = false;
     } else if (event.code === 'ArrowUp') {
         upKeyPressed = false;
+    } else if (event.code === 'Space') {
+        spacebarPressed = false;
+        changeVal();
     }
 }
 

@@ -35,3 +35,4 @@ let change = false;
 let rightKeyPressed = false;
 let leftKeyPressed = false;
 let upKeyPressed = false;
+let spacebarPressed = false;
