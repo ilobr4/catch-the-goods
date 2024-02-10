@@ -8,7 +8,7 @@ The player can move left, right and jump with the arrow keys.
 
 ![Screenshot (126)](https://github.com/ilobr4/catch-the-goods/assets/138172566/4a320dcc-4438-410c-a37a-6801e0bd336a)
 
-When the button *CHANGE* is clicked or the spacebar is pressed the scenery of the game changes. 
+When the button **CHANGE** is clicked or the spacebar is pressed the scenery of the game changes. 
 There are only two scenerys.
 
 ![Screenshot (127)](https://github.com/ilobr4/catch-the-goods/assets/138172566/8a94d08b-f7b0-492f-b010-c1fc8c6bba06)
